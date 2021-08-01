@@ -26,8 +26,10 @@ defmodule GoodreadsTwitter.MixProject do
   defp deps do
     [
       {:credo, "~> 1.5", only: [:dev, :test], runtime: false},
-      {:dialyxir, "~> 1.1", only: [:dev, :test], runtime: false}
-      # {:dep_from_git, git: "https://github.com/elixir-lang/my_dep.git", tag: "0.1.0"}
+      {:dialyxir, "~> 1.1", only: [:dev, :test], runtime: false},
+      {:oauther,
+       git: "https://github.com/evanob/oauther.git",
+       ref: "875581cbb0261b19fed1bd6bfd60d7513f6ce230"}
     ]
   end
 end
