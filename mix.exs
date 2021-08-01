@@ -29,7 +29,8 @@ defmodule GoodreadsTwitter.MixProject do
       {:dialyxir, "~> 1.1", only: [:dev, :test], runtime: false},
       {:oauther,
        git: "https://github.com/evanob/oauther.git",
-       ref: "875581cbb0261b19fed1bd6bfd60d7513f6ce230"}
+       ref: "875581cbb0261b19fed1bd6bfd60d7513f6ce230", override: true},
+      {:extwitter, "~> 0.12"}
     ]
   end
 end
